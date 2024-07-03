@@ -1,0 +1,339 @@
+/* body {
+   background-color: #1a1a1a; 
+    color: #f1f1f1; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2b2b; 
+    height: 10vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #f1f1f1; 
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #333333; 
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#file-input {
+    height: 40px;
+    width: 250px;
+    background-color: #555555; 
+    color: #f1f1f1; 
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    background-color: #888888; 
+    color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #666666;
+}
+
+select {
+    height: 40px;
+    width: 250px;
+    background-color: #555555; 
+    color: #f1f1f1; 
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 1em;
+}
+
+label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #f1f1f1; 
+}
+
+#plot-div {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    max-width: 90%; 
+    margin: 20px auto;
+    position: relative;
+}
+
+.plot-container {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #444444; 
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.plot-container .delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff5555; 
+    color: #f1f1f1; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.plot-container .delete-button:hover {
+    background-color: #ff2222; 
+}
+
+.summary-container {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+    font-size: 1.2em;
+    white-space: pre-wrap;
+    background-color: #444444; 
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.summary-text {
+    width: 100%;
+    display: inline-block;
+    border-right: 2px solid;
+    white-space: normal; 
+    overflow-wrap: break-word;
+    overflow: hidden;
+    animation: typing 8s steps(100, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: transparent; }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+#full-plot {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; 
+    flex-wrap: wrap; 
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333333; /* Dark grey text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure header stays on top */
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.container {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    width:100%;
+    margin: 80px auto; /* Ensure content is centered below fixed header */
+    padding: 20px;
+}
+
+.section {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    width:90vw;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+#plots-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between graphs */
+}
+
+.plot-summary-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.graph-div {
+    flex: 1; /* Make the graph div flexible */
+    margin-right: 20px;
+}
+
+.summary-div {
+    flex: 1; /* Make the summary div flexible */
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-y: auto; /* Ensure scroll if the text is long */
+}
+
+#generated-summary {
+    margin-top: 10px;
+    font-size: 0.9em;
+    line-height: 1.6;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 0.9em;
+    }
+}
+
+.section2 {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    width:90vw;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: white; /* Background color to ensure content below doesn't show through */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.hidden {
+    display: none;
+}
